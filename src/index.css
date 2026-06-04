@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-terrace-bg: #F2F0EB;
+  --color-terrace-dark: #4A453F;
+  --color-terrace-title: #5D574F;
+  --color-terrace-clay: #8D7A68;
+  --color-terrace-moss: #A3AD91;
+  --color-terrace-green: #C8D1BB;
+  --color-terrace-light: #E2E8D8;
+  --color-terrace-brown: #6b5e4c;
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

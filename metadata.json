@@ -1,0 +1,6 @@
+{
+  "name": "Terraced Fields Portfolio",
+  "description": "A highly interactive terraced-field themed personal portfolio using layered flow transitions, organic fluid layouts, and rich cinematic media players.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
