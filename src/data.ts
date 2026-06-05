@@ -14,7 +14,7 @@ export const portfolioCategories: Category[] = [
         title: '豪士面包TVC广告片段 10s',
         subtitle: '自制广告影片创作',
         description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，设备：SONY zve-10。',
-        videoUrl: 'https://player.vimeo.com/external/384761655.sd.mp4?s=3828efb040f7b189d5c12f409999f8d97e68b002&profile_id=165&oauth2_token_id=57447761',
+        videoUrl: './assets/.aistudio/videos/haoshi.mp4'
         colors: {
           primary: '#807264',
           secondary: '#C2B29F',
