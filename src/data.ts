@@ -1,4 +1,5 @@
 import { Category } from './types';
+import haoshiVideo from './assets/.aistudio/videos/haoshi.mp4';
 
 export const portfolioCategories: Category[] = [
   {
