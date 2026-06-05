@@ -11,9 +11,9 @@ export const portfolioCategories: Category[] = [
     projects: [
       {
         id: 'creative-a',
-        title: '自制TVC广告片段 10s',
-        subtitle: '商业映像创作',
-        description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行高画质拍摄。',
+        title: '豪士面包TVC广告片段 10s',
+        subtitle: '自制广告影片创作',
+        description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，设备：SONY zve-10。',
         videoUrl: 'https://player.vimeo.com/external/384761655.sd.mp4?s=3828efb040f7b189d5c12f409999f8d97e68b002&profile_id=165&oauth2_token_id=57447761',
         colors: {
           primary: '#807264',
@@ -30,7 +30,7 @@ export const portfolioCategories: Category[] = [
         id: 'creative-b',
         title: 'AI实景合成短视频《奇遇》',
         subtitle: '宿舍中突然出现的精灵们',
-        description: '独立制作。采用数字化后期合成技术，将幻想中的精灵角色无缝嫁接并沉浸式融入真实宿舍生活场景。',
+        description: '独立制作。采用数字化后期合成技术，将精灵角色融入真实大学生活场景。',
         videoUrl: 'https://player.vimeo.com/external/432924355.sd.mp4?s=d7e7ee8e3d6f1df18f2edced16a3a4b9eeab26e4&profile_id=165&oauth2_token_id=57447761',
         colors: {
           primary: '#3B5249',
@@ -38,14 +38,14 @@ export const portfolioCategories: Category[] = [
           accent: '#476356'
         },
         details: [
-          { label: '职位', value: '独立制作 (独立创作与后期合成)' }
+          { label: '职位', value: '独立制作' }
         ]
       },
       {
         id: 'creative-c',
         title: '创意短视频《方寸之间》',
         subtitle: '鼠标成精出逃记',
-        description: '独立制作。讲述办公桌方寸微观世界里“鼠标成精并出逃”的奇趣故事，以精准的物体运动规律与拟人化视效创意趣味呈现。',
+        description: '独立制作。讲述宿舍里“鼠标成精并出逃”的奇趣故事。',
         videoUrl: 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c022273eecaf26d6d45f3f0194883584&profile_id=139&oauth2_token_id=57447761',
         colors: {
           primary: '#5B6B56',
@@ -69,8 +69,8 @@ export const portfolioCategories: Category[] = [
       {
         id: 'edit-a',
         title: '社区开业视频',
-        subtitle: '温情人文纪实',
-        description: '专业后期与画面剪辑。聚焦社区街区开业庆典盛况，通过轻快的节奏排布与温情的视听叙事拉近社区与人文日常的归属连接。',
+        subtitle: '活动纪实',
+        description: '聚焦社区党群服务中心开业庆典盛况，通过轻快的节奏排布与温情的视听叙事拉近社区与人文日常的归属连接。',
         videoUrl: 'https://player.vimeo.com/external/403061730.sd.mp4?s=d0db58ebd747514a4cbd9008bc59e7a898bd048a&profile_id=165&oauth2_token_id=57447761',
         colors: {
           primary: '#504136',
@@ -84,8 +84,8 @@ export const portfolioCategories: Category[] = [
       {
         id: 'edit-b',
         title: '场馆开业视频',
-        subtitle: '大气磅礴开幕重剪',
-        description: '场馆盛大开业宣传片。重点在画面张力、冷暖调色和强节奏音频音程的黄金卡位，重现地标性建筑与启幕仪式的质感。',
+        subtitle: '游乐场活动预热',
+        description: '配合真人出镜，拍摄并剪辑游乐场开业预热营销视频。',
         videoUrl: 'https://player.vimeo.com/external/409241517.sd.mp4?s=543419992bb1ff212df860ba329ecb7ca2c68f23&profile_id=165&oauth2_token_id=57447761',
         colors: {
           primary: '#3B5249',
@@ -93,7 +93,7 @@ export const portfolioCategories: Category[] = [
           accent: '#D2DBCE'
         },
         details: [
-          { label: '服务包含', value: '节奏卡位剪辑 / 局部视效渲染 / 专业校色' }
+          { label: '服务包含', value: '节奏卡位剪辑 / 字幕动画 / 专业校色' }
         ]
       }
     ]
@@ -109,8 +109,8 @@ export const portfolioCategories: Category[] = [
       {
         id: 'graphic-a',
         title: '白参参IP设计',
-        subtitle: '三张竖版海报',
-        description: '原创吉祥物人设视觉。将传统白人参设计进行拟人重塑，定制白参参IP形象。海报包含三张成套竖版平面视觉系统展现。',
+        subtitle: '展板',
+        description: '原创长白山吉祥物。将传统白人参设计进行拟人重塑，定制白参参IP形象。海报包含三张成套竖版平面视觉系统展现。',
         images: [
           'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800&h=1200',
           'https://images.unsplash.com/photo-1618005198143-e5283b519a7f?auto=format&fit=crop&q=80&w=800&h=1200',
@@ -122,14 +122,14 @@ export const portfolioCategories: Category[] = [
           accent: '#3B5249'
         },
         details: [
-          { label: '企划包含', value: '白参参精品IP设定 / 三张竖版平面海报' }
+          { label: '企划包含', value: '白参参精品IP设定 / 三张竖版展板' }
         ]
       },
       {
         id: 'graphic-b',
         title: '基地研学折页手册设计',
-        subtitle: '两张横板超长图片',
-        description: '为生态研学基地量身定制的折页手册，全套排版输出为两张横板高精度一体超长图片，版面信息平滑流动。',
+        subtitle: '双面10页手册，用于发放给参加基地研学的学生',
+        description: '为研学基地量身定制的折页手册',
         images: [
           'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1400&h=600',
           'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1400&h=600'
@@ -162,7 +162,7 @@ export const portfolioCategories: Category[] = [
         id: 'graphic-d',
         title: '校园类',
         subtitle: '分为H5（竖版视频）, 招生海报（3张竖版海报），诚信纸巾海报（2张竖版海报）',
-        description: '全套高定校园视觉包。精简拆分为：一部动态多媒体微宣传H5（以竖版视频呈现演示）；三张高逼格精品招生视觉主海报；以及两张干净雅致的诚信包装纸巾广告海报。',
+        description: '全套高定校园视觉包。包含动态多媒体微宣传H5；三张招生视觉主海报；以及两张诚信包装纸巾广告海报。',
         images: [
           'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600&h=900',
           'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600&h=900',
@@ -184,7 +184,7 @@ export const portfolioCategories: Category[] = [
         id: 'graphic-e',
         title: 'AE合集（视频）',
         subtitle: '动态图形集',
-        description: 'AE视觉动画合集视频。整合多用途创意文字粒子渲染、动态图形变幻与空间摄像机巡游的高光镜头集锦。',
+        description: 'AE视觉动画合集视频。',
         videoUrl: 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c022273eecaf26d6d45f3f0194883584&profile_id=139&oauth2_token_id=57447761',
         colors: {
           primary: '#5D574F',
