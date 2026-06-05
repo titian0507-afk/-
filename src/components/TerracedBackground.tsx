@@ -109,21 +109,7 @@ export default function TerracedBackground({ scrollY = 0, currentPage = 'home' }
                         C950,${p3} 1200,${p4} 1540,${yBase} 
                         L1540,950 Z`}
                     fill={layer.color}
-                    stroke={layer.stroke}
-                    strokeWidth="1.25"
-                    strokeDasharray={index === 4 ? "4,4" : undefined}
                     className="opacity-95"
-                  />
-                  
-                  {/* Fine parallel offset elevation contour line inside */}
-                  <path
-                    d={`M-100,${yBase - 15} 
-                        C250,${p1 - 15} 500,${p2 - 15} 720,${yBase - 15} 
-                        C950,${p3 - 15} 1200,${p4 - 15} 1540,${yBase - 15}`}
-                    fill="none"
-                    stroke={layer.stroke}
-                    strokeWidth="0.75"
-                    className="opacity-60"
                   />
                 </g>
               );
@@ -154,25 +140,6 @@ export default function TerracedBackground({ scrollY = 0, currentPage = 'home' }
               animation: 'terraceBreath3 18s ease-in-out infinite'
             }}
           />
-
-          {/* Graphic fine topographic mapping indicators */}
-          <svg 
-            className="absolute bottom-0 right-0 w-full h-96 z-10 pointer-events-none opacity-30 stroke-[#8A9679] stroke-[0.75] fill-none"
-            viewBox="0 0 1024 300"
-            preserveAspectRatio="none"
-          >
-            <g 
-              style={{
-                transform: `translate(${mousePos.x * 8}px, ${mousePos.y * 5 - (scrollY * 0.15)}px)`,
-              }}
-              className="transition-transform duration-300"
-            >
-              <path d="M0,150 Q250,50 512,150 T1024,150 animate-pulse" />
-              <path d="M0,180 Q250,80 512,180 T1024,180" />
-              <path d="M0,210 Q250,110 512,210 T1024,210" />
-              <path d="M0,240 Q250,140 512,240 T1024,240" />
-            </g>
-          </svg>
         </>
       )}
 

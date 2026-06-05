@@ -6,9 +6,10 @@ interface VideoPlayerProps {
   poster?: string;
   externalUrl?: string;
   title: string;
+  isVertical?: boolean;
 }
 
-export default function VideoPlayer({ src, poster, externalUrl, title }: VideoPlayerProps) {
+export default function VideoPlayer({ src, poster, externalUrl, title, isVertical = false }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -108,7 +109,9 @@ export default function VideoPlayer({ src, poster, externalUrl, title }: VideoPl
 
   return (
     <div 
-      className="relative group bg-stone-950 rounded-2xl overflow-hidden shadow-2xl border border-[#D2DBCE]/40 aspect-video select-none"
+      className={`relative group bg-stone-950 rounded-2xl overflow-hidden shadow-2xl border border-[#D2DBCE]/40 select-none transition-all ${
+        isVertical ? 'aspect-[9/16] max-w-[310px] mx-auto w-full' : 'aspect-video w-full'
+      }`}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => isPlaying && setShowControls(false)}
       id={`video-player-${title.replace(/\s+/g, '-').toLowerCase()}`}

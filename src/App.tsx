@@ -583,12 +583,14 @@ export default function App() {
                         </p>
                       </div>
 
-                      <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
-                        {project.description}
-                      </p>
+                      {project.description && (
+                        <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
+                          {project.description}
+                        </p>
+                      )}
 
                       {/* Dynamic Specs table */}
-                      {project.details && (
+                      {project.details && project.details.length > 0 && (
                         <div className="grid grid-cols-2 gap-y-3 gap-x-4 py-3 border-t border-b border-[#D9D3C7]/45 text-left font-sans text-xs">
                           {project.details.map((detail, dIdx) => (
                             <div key={dIdx} className="flex flex-col">
@@ -703,12 +705,14 @@ export default function App() {
                         </p>
                       </div>
 
-                      <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
-                        {project.description}
-                      </p>
+                      {project.description && (
+                        <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
+                          {project.description}
+                        </p>
+                      )}
 
                       {/* Technical checklist details */}
-                      {project.details && (
+                      {project.details && project.details.length > 0 && (
                         <div className="flex flex-col gap-3 py-3 border-t border-[#D9D3C7]/30 mt-2">
                           {project.details.map((detail, dIdx) => (
                             <div key={dIdx} className="flex flex-col text-left font-sans text-xs bg-[#FAF9F5]/50 p-3 rounded-xl border border-[#D9D3C7]/40">
@@ -778,15 +782,17 @@ export default function App() {
                     </div>
 
                     {/* Description text content */}
-                    <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans text-left max-w-4xl">
-                      {project.description}
-                    </p>
+                    {project.description && (
+                      <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans text-left max-w-4xl">
+                        {project.description}
+                      </p>
+                    )}
 
                     {/* Integrated custom gallery showcasing specs, fonts, copy triggers, zoom lightbox */}
                     <GraphicGallery project={project} />
 
                     {/* Detail metadata table underneath */}
-                    {project.details && (
+                    {project.details && project.details.length > 0 && (
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4 bg-[#FAF9F5]/60 border border-[#D9D3C7]/50 rounded-2xl text-left text-xs font-sans mt-2">
                         {project.details.map((detail, dIdx) => (
                           <div key={dIdx} className="flex flex-col gap-0.5">
