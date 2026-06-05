@@ -1,5 +1,4 @@
 import { Category } from './types';
-import haoshiVideo from './assets/.aistudio/videos/haoshi.mp4';
 
 export const portfolioCategories: Category[] = [
   {
@@ -15,7 +14,7 @@ export const portfolioCategories: Category[] = [
         title: '豪士面包TVC广告片段 10s',
         subtitle: '自制广告影片创作',
         description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，设备：SONY zve-10。',
-        videoUrl: './assets/.aistudio/videos/haoshi.mp4'
+        videoUrl: haoshiVideo
         colors: {
           primary: '#807264',
           secondary: '#C2B29F',
