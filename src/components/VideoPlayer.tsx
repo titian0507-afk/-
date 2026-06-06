@@ -21,7 +21,7 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
   const [showControls, setShowControls] = useState(true);
   const [isWaiting, setIsWaiting] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [hasError, setHasError] = useState(false); // ⭐ 新增：全屏状态监听
+  const [hasError, setHasError] = useState(false); // 视频加载错误状态
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // 监听全屏状态变化，以便动态更新样式
@@ -182,7 +182,7 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
         </div>
       )}
 
-      {      {hasError && (
+            {hasError && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 z-20 p-6">
           <div className="bg-[#3B5249]/90 rounded-2xl p-6 max-w-sm text-center shadow-2xl border border-[#D2DBCE]/30">
             <div className="text-4xl mb-3">🎬</div>
@@ -199,8 +199,7 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
             )}
           </div>
         </div>
-      )}
-
+      {/* Loading Ring Indicator */}
       /* Loading Ring Indicator */}
       {isWaiting && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40 pointer-events-none z-10">
@@ -306,4 +305,6 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
     </div>
   );
 }
+
+
 
