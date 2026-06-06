@@ -69,6 +69,7 @@ export const portfolioCategories: Category[] = [
         subtitle: '宿舍中突然出现的精灵们',
         description: '独立制作。采用数字化后期合成技术，将幻想中的精灵角色无缝嫁接并沉浸式融入真实宿舍生活场景。',
         videoUrl: jinglingVideo,
+        isVertical: true,
         colors: {
           primary: '#3B5249',
           secondary: '#A2B59F',
@@ -84,6 +85,7 @@ export const portfolioCategories: Category[] = [
         subtitle: '鼠标成精出逃记',
         description: '独立制作。讲述办公桌方寸微观世界里“鼠标成精并出逃”的奇趣故事，以精准的物体运动规律与拟人化视效创意趣味呈现。',
         videoUrl: mouseVideo,
+        isVertical: true,
         colors: {
           primary: '#5B6B56',
           secondary: '#A9B89E',

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   ArrowLeft, 
@@ -622,6 +622,7 @@ export default function App() {
                           src={project.videoUrl} 
                           title={project.title}
                           externalUrl={project.externalUrl}
+                          isVertical={project.isVertical}
                         />
                       )}
                     </div>
@@ -686,6 +687,7 @@ export default function App() {
                             src={project.videoUrl} 
                             title={project.title}
                             externalUrl={project.externalUrl}
+                          isVertical={project.isVertical}
                           />
                         )
                       )}

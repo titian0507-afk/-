@@ -1,4 +1,4 @@
-export interface Project {
+﻿export interface Project {
   id: string;
   title: string;
   subtitle: string;
@@ -20,6 +20,7 @@ export interface Project {
   gradedVideoUrl?: string; // Graded output video
   rawImageUrl?: string; // Original raw image placeholder
   gradedImageUrl?: string; // Graded image placeholder
+  isVertical?: boolean; // 竖屏视频（9:16比例）
 }
 
 export interface Category {
