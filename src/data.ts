@@ -150,9 +150,9 @@ export const portfolioCategories: Category[] = [
         subtitle: '三张竖版海报',
         description: '原创吉祥物人设视觉。将传统白人参设计进行拟人重塑，定制白参参IP形象。海报包含三张成套竖版平面视觉系统展现。',
         images: [
-          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800&h=1200',
-          'https://images.unsplash.com/photo-1618005198143-e5283b519a7f?auto=format&fit=crop&q=80&w=800&h=1200',
-          'https://images.unsplash.com/photo-1604871000636-074fa5117945?auto=format&fit=crop&q=80&w=800&h=1200'
+          zhanban1Img,
+          zhanban2Img,
+          zhanban3Img
         ],
         colors: {
           primary: '#5B6B56',
