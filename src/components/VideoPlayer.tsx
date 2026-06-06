@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+﻿import React, { useRef, useState, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Maximize2, ExternalLink } from 'lucide-react';
 
 interface VideoPlayerProps {
@@ -20,7 +20,8 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
   const [playbackRate, setPlaybackRate] = useState(1);
   const [showControls, setShowControls] = useState(true);
   const [isWaiting, setIsWaiting] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false); // ⭐ 新增：全屏状态监听
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [hasError, setHasError] = useState(false); // ⭐ 新增：全屏状态监听
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // 监听全屏状态变化，以便动态更新样式
@@ -164,6 +165,7 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
         onLoadedMetadata={handleLoadedMetadata}
         onWaiting={() => setIsWaiting(true)}
         onPlaying={() => setIsWaiting(false)}
+        onError={() => setHasError(true)}
         onClick={togglePlay}
         style={{ cursor: 'pointer' }}
       />
@@ -180,7 +182,26 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
         </div>
       )}
 
-      {/* Loading Ring Indicator */}
+      {      {hasError && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 z-20 p-6">
+          <div className="bg-[#3B5249]/90 rounded-2xl p-6 max-w-sm text-center shadow-2xl border border-[#D2DBCE]/30">
+            <div className="text-4xl mb-3">🎬</div>
+            <h4 className="text-[#FAF5EF] font-serif text-base mb-2">视频暂未加载</h4>
+            <p className="text-[#D2DBCE] text-xs leading-relaxed mb-4">
+              视频文件加载失败。部署后即可正常播放，或通过下方外部原片链接观看。
+            </p>
+            {externalUrl && (
+              <a href={externalUrl} target="_blank" rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-[#FAF5EF] text-[#3B5249] px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-white transition-all shadow-md">
+                前往外部原片观看
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+          </div>
+        </div>
+      )}
+
+      /* Loading Ring Indicator */}
       {isWaiting && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40 pointer-events-none z-10">
           <div className="w-12 h-12 border-4 border-[#A2B59F] border-t-transparent rounded-full animate-spin" />
@@ -285,3 +306,4 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
     </div>
   );
 }
+
