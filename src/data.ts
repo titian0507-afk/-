@@ -8,6 +8,7 @@ import jinglingVideo from '../assets/videos/jingling.mp4';
 import mouseVideo from '../assets/videos/mouse.mp4';
 import xyVideo from '../assets/videos/xy.mp4';
 import yanyuanVideo from '../assets/videos/yanyuan.mp4';
+import aeVideo from '../assets/videos/ae合集.mp4';
 
 // ==========================================
 // 2. 图片与混合文件导入 (pictures 文件夹)
@@ -221,10 +222,9 @@ export const portfolioCategories: Category[] = [
       },
       {
         id: 'graphic-e',
-        title: 'AE合集',
-        subtitle: '动态图形集混剪',
-        description: '包含专业老师录播课，个人原创微课的片头和部分动画，以及文字快闪等',
-        videoUrl: 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c022273eecaf26d6d45f3f0194883584&profile_id=139&oauth2_token_id=57447761',
+        subtitle: '动态图形集',
+        description: 'AE视觉动画合集视频。整合多用途创意文字粒子渲染、动态图形变幻与空间摄像机巡游的高光镜头集锦。',
+        videoUrl: aeVideo,
         colors: {
           primary: '#5D574F',
           secondary: '#A2B59F',
@@ -237,6 +237,7 @@ export const portfolioCategories: Category[] = [
     ]
   }
 ];
+
 
 
 
