@@ -4,38 +4,38 @@ import { Category } from './types';
 // ==========================================
 // 1. 视频文件导入 (videos 文件夹)
 // ==========================================
-import haoshiVideo from './assets/.aistudio/videos/haoshi.mp4';       // 豪士面包
-import jinglingVideo from './assets/.aistudio/videos/jingling.mp4';   // 奇遇(精灵)
-import mouseVideo from './assets/.aistudio/videos/mouse.mp4';         // 方寸之间(鼠标)
-import xyVideo from './assets/.aistudio/videos/xy.mp4';               // 开业视频/或其他视频
-import yanyuanVideo from './assets/.aistudio/videos/yanyuan.mp4';     // 演员/或其他视频
+import haoshiVideo from './assets/videos/haoshi.mp4';       // 豪士面包
+import jinglingVideo from './assets/videos/jingling.mp4';   // 奇遇(精灵)
+import mouseVideo from './assets/videos/mouse.mp4';         // 方寸之间(鼠标)
+import xyVideo from './asset/videos/xy.mp4';               // 开业视频/或其他视频
+import yanyuanVideo from './assets/videos/yanyuan.mp4';     // 演员/或其他视频
 
 // ==========================================
 // 2. 图片与混合文件导入 (pictures 文件夹)
 // ==========================================
 // 校园类 - 招生海报
-import zhao1Img from './assets/.aistudio/pictures/zhao1.jpg';
-import zhao2Img from './assets/.aistudio/pictures/zhao2.jpg';
-import zhao3Img from './assets/.aistudio/pictures/zhao3.jpg';
+import zhao1Img from './assets/pictures/zhao1.jpg';
+import zhao2Img from './assets/pictures/zhao2.jpg';
+import zhao3Img from './assets/pictures/zhao3.jpg';
 
 // 基地研学 - 折页宣传册
-import brochureFront from './assets/.aistudio/pictures/宣传册正.png';
-import brochureBack from './assets/.aistudio/pictures/宣传册反.png';
+import brochureFront from './assets/pictures/宣传册正.png';
+import brochureBack from './assets/pictures/宣传册反.png';
 
 // 白参参IP - 展板
 // ⚠️ 注意：根据你的截图，"展板1"后面有一个空格。代码里必须和文件名完全一致。
 // 建议：最好在电脑里把文件名改成没有空格的 "展板1.jpg"，然后把下面的空格去掉，这样不容易报错。
-import zhanban1Img from './assets/.aistudio/pictures/展板1 .jpg';
-import zhanban2Img from './assets/.aistudio/pictures/展板2 .jpg';
-import zhanban3Img from './assets/.aistudio/pictures/展板3 .jpg';
+import zhanban1Img from './assets/pictures/展板1 .jpg';
+import zhanban2Img from './assets/pictures/展板2 .jpg';
+import zhanban3Img from './assets/pictures/展板3 .jpg';
 
 // 校园类 - 诚信纸巾宣传图
-import tissue1Img from './assets/.aistudio/pictures/诚信纸巾宣传图1.jpg';
-import tissue2Img from './assets/.aistudio/pictures/诚信纸巾宣传图2.jpg';
+import tissue1Img from './assets/pictures/诚信纸巾宣传图1.jpg';
+import tissue2Img from './assets/pictures/诚信纸巾宣传图2.jpg';
 
 // 存放在 pictures 文件夹里的视频文件
-import hongbohuiVideo from './assets/.aistudio/pictures/洪博会H5邀请函.mp4'; // 洪博会H5
-import yanshiVideo from './assets/.aistudio/pictures/演示视频.mp4';          // 演示视频
+import hongbohuiVideo from './assets/pictures/洪博会H5邀请函.mp4'; // 洪博会H5
+import yanshiVideo from './assets/pictures/演示视频.mp4';          // 演示视频
 
 
 export const portfolioCategories: Category[] = [
@@ -84,7 +84,7 @@ export const portfolioCategories: Category[] = [
         title: '创意短视频《方寸之间》',
         subtitle: '鼠标成精出逃记',
         description: '独立制作。讲述办公桌方寸微观世界里“鼠标成精并出逃”的奇趣故事，以精准的物体运动规律与拟人化视效创意趣味呈现。',
-        videoUrl: jinglingVideo,
+        videoUrl: mouseVideo,
         colors: {
           primary: '#5B6B56',
           secondary: '#A9B89E',
