@@ -222,6 +222,7 @@ export const portfolioCategories: Category[] = [
       },
       {
         id: 'graphic-e',
+        title: 'AE合集（视频）',
         subtitle: '动态图形集',
         description: 'AE视觉动画合集视频。整合多用途创意文字粒子渲染、动态图形变幻与空间摄像机巡游的高光镜头集锦。',
         videoUrl: aeVideo,
