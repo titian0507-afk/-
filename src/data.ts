@@ -1,11 +1,11 @@
-import { Category } from './types';
+﻿import { Category } from './types';
 
 // ==========================================
 // 1. 视频文件导入 (videos 文件夹)
 // ==========================================
-import haoshiVideo from '../assets/videos/haoshi.mp4';       // 豪士面包
+// haoshi.mp4 已移至 public/videos/，使用直接URL
 import jinglingVideo from '../assets/videos/jingling.mp4';   // 奇遇(精灵)
-import mouseVideo from '../assets/videos/mouse.mp4';         // 方寸之间(鼠标)
+// mouse.mp4 已移至 public/videos/，使用直接URL
 import xyVideo from '../assets/videos/xy.mp4';               // 开业视频/或其他视频
 import yanyuanVideo from '../assets/videos/yanyuan.mp4';     // 演员/或其他视频
 
@@ -51,7 +51,7 @@ export const portfolioCategories: Category[] = [
         title: '自制TVC广告片段 10s',
         subtitle: '商业映像创作',
         description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行高画质拍摄。',
-        videoUrl:haoshiVideo,
+        videoUrl: '/videos/haoshi.mp4',
         colors: {
           primary: '#807264',
           secondary: '#C2B29F',
@@ -83,7 +83,7 @@ export const portfolioCategories: Category[] = [
         title: '创意短视频《方寸之间》',
         subtitle: '鼠标成精出逃记',
         description: '独立制作。讲述办公桌方寸微观世界里“鼠标成精并出逃”的奇趣故事，以精准的物体运动规律与拟人化视效创意趣味呈现。',
-        videoUrl:mouseVideo,
+        videoUrl: '/videos/mouse.mp4',
         colors: {
           primary: '#5B6B56',
           secondary: '#A9B89E',
@@ -235,3 +235,4 @@ export const portfolioCategories: Category[] = [
     ]
   }
 ];
+
