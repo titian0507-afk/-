@@ -218,3 +218,70 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
         </div>
 
         {/* Action Controls */}
+        <div className="flex items-center justify-between w-full text-white">
+          <div className="flex items-center gap-4">
+            <button 
+              onClick={togglePlay}
+              className="hover:text-[#A2B59F] transition-colors p-1 rounded-full aspect-square"
+              title={isPlaying ? '暂停' : '播放'}
+            >
+              {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+            </button>
+
+            {/* Volume control */}
+            <div className="flex items-center gap-2 group/volume">
+              <button 
+                onClick={toggleMute}
+                className="hover:text-[#A2B59F] transition-colors"
+                title={isMuted ? '取消静音' : '静音'}
+              >
+                {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+              </button>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value={isMuted ? 0 : volume}
+                onChange={handleVolumeChange}
+                className="w-0 overflow-hidden group-hover/volume:w-16 h-1 accent-[#FAF5EF] rounded-full cursor-pointer appearance-none transition-all duration-300 bg-stone-700"
+              />
+            </div>
+
+            {/* Playback rate speed */}
+            <button
+              onClick={changeSpeed}
+              className="text-[10px] select-none font-mono font-medium tracking-wide bg-stone-800 hover:bg-stone-700 px-2.5 py-1.5 rounded-md transition-colors text-[#D2DBCE]"
+            >
+              {playbackRate}x 倍速
+            </button>
+          </div>
+
+          <div className="flex items-center gap-3">
+            {/* View Full external link if provided */}
+            {externalUrl && (
+              <a 
+                href={externalUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-1.5 text-xs bg-[#FAF5EF]/15 hover:bg-[#FAF5EF]/25 text-[#FAF5EF] font-mono px-3 py-1.5 rounded-lg border border-[#FAF5EF]/10 transition-colors"
+                title="前往完整视频网页播放"
+              >
+                <span className="font-sans text-[11px] font-light">外部原片</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
+
+            <button
+              onClick={toggleFullscreen}
+              className="hover:text-[#A2B59F] transition-colors p-1"
+              title="全屏播放"
+            >
+              <Maximize2 className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
