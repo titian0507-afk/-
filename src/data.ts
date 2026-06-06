@@ -51,7 +51,7 @@ export const portfolioCategories: Category[] = [
         title: '自制TVC广告片段 10s',
         subtitle: '商业映像创作',
         description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行高画质拍摄。',
-        videoUrl: haoshiVideo,
+        videoUrl: '' // TODO: 填入COS URL - TVC广告
         colors: {
           primary: '#807264',
           secondary: '#C2B29F',
@@ -83,7 +83,7 @@ export const portfolioCategories: Category[] = [
         title: '创意短视频《方寸之间》',
         subtitle: '鼠标成精出逃记',
         description: '独立制作。讲述办公桌方寸微观世界里“鼠标成精并出逃”的奇趣故事，以精准的物体运动规律与拟人化视效创意趣味呈现。',
-        videoUrl: mouseVideo,
+        videoUrl: '' // TODO: 填入COS URL - 方寸之间
         colors: {
           primary: '#5B6B56',
           secondary: '#A9B89E',
@@ -235,6 +235,7 @@ export const portfolioCategories: Category[] = [
     ]
   }
 ];
+
 
 
 
