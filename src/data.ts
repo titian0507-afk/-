@@ -52,7 +52,7 @@ export const portfolioCategories: Category[] = [
         title: '自制TVC广告片段 10s',
         subtitle: '商业映像创作',
         description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行高画质拍摄。',
-        videoUrl: 'https://player.vimeo.com/external/384761655.sd.mp4?s=3828efb040f7b189d5c12f409999f8d97e68b002&profile_id=165&oauth2_token_id=57447761',
+        videoUrl: haoshiVideo,
         colors: {
           primary: '#807264',
           secondary: '#C2B29F',
