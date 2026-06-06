@@ -199,8 +199,8 @@ export default function VideoPlayer({ src, poster, externalUrl, title, isVertica
             )}
           </div>
         </div>
+      )}
       {/* Loading Ring Indicator */}
-      /* Loading Ring Indicator */}
       {isWaiting && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40 pointer-events-none z-10">
           <div className="w-12 h-12 border-4 border-[#A2B59F] border-t-transparent rounded-full animate-spin" />
