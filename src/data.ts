@@ -49,8 +49,8 @@ export const portfolioCategories: Category[] = [
       {
         id: 'creative-a',
         title: '自制TVC广告片段 10s',
-        subtitle: '商业映像创作',
-        description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行高画质拍摄。',
+        subtitle: '大广赛作品',
+        description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行拍摄。',
         videoUrl: haoshiVideo,
         colors: {
           primary: '#807264',
@@ -67,7 +67,7 @@ export const portfolioCategories: Category[] = [
         id: 'creative-b',
         title: 'AI实景合成短视频《奇遇》',
         subtitle: '宿舍中突然出现的精灵们',
-        description: '独立制作。采用数字化后期合成技术，将幻想中的精灵角色无缝嫁接并沉浸式融入真实宿舍生活场景。',
+        description: '将幻想中的精灵角色无缝嫁接并沉浸式融入真实宿舍生活场景。',
         videoUrl: jinglingVideo,
         isVertical: true,
         colors: {
@@ -76,7 +76,7 @@ export const portfolioCategories: Category[] = [
           accent: '#476356'
         },
         details: [
-          { label: '职位', value: '独立制作 (独立创作与后期合成)' }
+          { label: '职位', value: '独立制作' }
         ]
       },
       {
@@ -101,7 +101,7 @@ export const portfolioCategories: Category[] = [
     id: 'post-production-editing',
     title: '后期与剪辑',
     englishTitle: 'Editing & Post-Production',
-    description: '精确剪辑与声画工程，重组真实事件并彰显气势与质感。',
+    description: '精确剪辑与声画工程。',
     accentColor: '#8D7A68',
     bgColor: '#FAF5EF',
     projects: [
@@ -109,7 +109,7 @@ export const portfolioCategories: Category[] = [
         id: 'edit-a',
         title: '社区开业视频',
         subtitle: '温情人文纪实',
-        description: '专业后期与画面剪辑。聚焦社区街区开业庆典盛况，通过轻快的节奏排布与温情的视听叙事拉近社区与人文日常的归属连接。',
+        description: '专业后期与画面剪辑。聚焦社区党群服务中心开业庆典盛况，通过轻快的节奏排布与温情的视听叙事拉近社区与人文日常的归属连接。',
         videoUrl: xyVideo,
         colors: {
           primary: '#504136',
@@ -117,7 +117,7 @@ export const portfolioCategories: Category[] = [
           accent: '#A68D75'
         },
         details: [
-          { label: '服务包含', value: '后期剪辑 / 人文色调调色 / 声效混合' }
+          { label: '服务包含', value: '拍摄，剪辑' }
         ]
       },
       {
@@ -223,7 +223,7 @@ export const portfolioCategories: Category[] = [
         id: 'graphic-e',
         title: 'AE合集（视频）',
         subtitle: '动态图形集',
-        description: 'AE视觉动画合集视频。整合多用途创意文字粒子渲染、动态图形变幻与空间摄像机巡游的高光镜头集锦。',
+        description: 'AE视觉动画合集视频。',
         videoUrl: 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c022273eecaf26d6d45f3f0194883584&profile_id=139&oauth2_token_id=57447761',
         colors: {
           primary: '#5D574F',
