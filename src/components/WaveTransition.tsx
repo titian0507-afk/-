@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface WaveTransitionProps {
@@ -11,10 +11,10 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
   // 5 elegant Morandi contour levels that slide diagonally from bottom-left to top-right
   const layers = [
     { color: '#E2E8D8', delay: 0 },     // Level 1: Light Terrace Green
-    { color: '#C8D1BB', delay: 0.04 },   // Level 2: Gentle Sprout Moss
-    { color: '#A3AD91', delay: 0.08 },   // Level 3: Clay Sage
-    { color: '#8D7A68', delay: 0.12 },   // Level 4: Terrace Clay Soil
-    { color: '#4A453F', delay: 0.16 },   // Level 5: Absolute Deep Earth Charcoal
+    { color: '#C8D1BB', delay: 0.06 },   // Level 2: Gentle Sprout Moss
+    { color: '#A3AD91', delay: 0.12 },   // Level 3: Clay Sage
+    { color: '#8D7A68', delay: 0.18 },   // Level 4: Terrace Clay Soil
+    { color: '#4A453F', delay: 0.24 },   // Level 5: Absolute Deep Earth Charcoal
   ];
 
   return (
@@ -80,7 +80,7 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
                 y: [15, 0, -5, -20],
                 transition: { 
                   times: [0, 0.2, 0.75, 1],
-                  duration: 1.0, 
+                  duration: 1.6, 
                   ease: 'easeInOut' 
                 } 
               }}
@@ -97,9 +97,9 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
           </div>
 
           {/* Invisible trigger mid-way (safe to swap DOM pages when fully covered) */}
-          <TriggerCallback delay={0.4} onTrigger={onMidway} />
+          <TriggerCallback delay={0.65} onTrigger={onMidway} />
           {/* Invisible trigger final exit */}
-          <TriggerCallback delay={0.9} onTrigger={onDone} />
+          <TriggerCallback delay={1.45} onTrigger={onDone} />
         </div>
       )}
     </AnimatePresence>
@@ -117,4 +117,3 @@ function TriggerCallback({ delay, onTrigger }: { delay: number; onTrigger: () =>
 
   return null;
 }
-
