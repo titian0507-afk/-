@@ -1,5 +1,4 @@
 import { Category } from './types';
-import { Category } from './types';
 
 // ==========================================
 // 1. 视频文件导入 (videos 文件夹)
@@ -7,7 +6,7 @@ import { Category } from './types';
 import haoshiVideo from '../assets/videos/haoshi.mp4';       // 豪士面包
 import jinglingVideo from '../assets/videos/jingling.mp4';   // 奇遇(精灵)
 import mouseVideo from '../assets/videos/mouse.mp4';         // 方寸之间(鼠标)
-import xyVideo from '../asset/videos/xy.mp4';               // 开业视频/或其他视频
+import xyVideo from '../assets/videos/xy.mp4';               // 开业视频/或其他视频
 import yanyuanVideo from '../assets/videos/yanyuan.mp4';     // 演员/或其他视频
 
 // ==========================================
@@ -169,9 +168,8 @@ export const portfolioCategories: Category[] = [
         subtitle: '两张横板超长矢量文件',
         description: '为研学基地量身定制的折页手册，全套排版输出为两张横板高精度一体超长矢量图稿件。',
         images: [
-          zhanban1Img,
-          zhanban2Img,
-          zhanban3Img
+          brochureFront,
+          brochureBack
         ],
         colors: {
           primary: '#8D7A68',
