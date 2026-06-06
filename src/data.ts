@@ -3,11 +3,11 @@
 // ==========================================
 // 1. 视频文件导入 (videos 文件夹)
 // ==========================================
-// 视频已迁移至腾讯云COS，使用外部URL
-// 视频已迁移至腾讯云COS，使用外部URL
-// 视频已迁移至腾讯云COS，使用外部URL
-// 视频已迁移至腾讯云COS，使用外部URL
-// 视频已迁移至腾讯云COS，使用外部URL
+import haoshiVideo from '../assets/videos/haoshi.mp4';
+import jinglingVideo from '../assets/videos/jingling.mp4';
+import mouseVideo from '../assets/videos/mouse.mp4';
+import xyVideo from '../assets/videos/xy.mp4';
+import yanyuanVideo from '../assets/videos/yanyuan.mp4';
 
 // ==========================================
 // 2. 图片与混合文件导入 (pictures 文件夹)
@@ -33,8 +33,8 @@ import tissue1Img from '../assets/pictures/诚信纸巾宣传图1.jpg';
 import tissue2Img from '../assets/pictures/诚信纸巾宣传图2.jpg';
 
 // 存放在 pictures 文件夹里的视频文件
-// 视频已迁移至腾讯云COS，使用外部URL
-// 视频已迁移至腾讯云COS，使用外部URL
+import hongbohuiVideo from '../assets/pictures/洪博会H5邀请函.mp4';
+import yanshiVideo from '../assets/pictures/演示视频.mp4';
 
 
 export const portfolioCategories: Category[] = [
@@ -51,7 +51,7 @@ export const portfolioCategories: Category[] = [
         title: '自制TVC广告片段 10s',
         subtitle: '商业映像创作',
         description: '由主创全流程独立掌镜与制作的10秒商业TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行高画质拍摄。',
-        videoUrl: '' // TODO: 填入COS URL - TVC广告
+        videoUrl: haoshiVideo,
         colors: {
           primary: '#807264',
           secondary: '#C2B29F',
@@ -68,7 +68,7 @@ export const portfolioCategories: Category[] = [
         title: 'AI实景合成短视频《奇遇》',
         subtitle: '宿舍中突然出现的精灵们',
         description: '独立制作。采用数字化后期合成技术，将幻想中的精灵角色无缝嫁接并沉浸式融入真实宿舍生活场景。',
-        videoUrl: '' // TODO: 填入COS URL - 奇遇,
+        videoUrl: jinglingVideo,
         colors: {
           primary: '#3B5249',
           secondary: '#A2B59F',
@@ -83,7 +83,7 @@ export const portfolioCategories: Category[] = [
         title: '创意短视频《方寸之间》',
         subtitle: '鼠标成精出逃记',
         description: '独立制作。讲述办公桌方寸微观世界里“鼠标成精并出逃”的奇趣故事，以精准的物体运动规律与拟人化视效创意趣味呈现。',
-        videoUrl: '' // TODO: 填入COS URL - 方寸之间
+        videoUrl: mouseVideo,
         colors: {
           primary: '#5B6B56',
           secondary: '#A9B89E',
@@ -108,7 +108,7 @@ export const portfolioCategories: Category[] = [
         title: '社区开业视频',
         subtitle: '温情人文纪实',
         description: '专业后期与画面剪辑。聚焦社区街区开业庆典盛况，通过轻快的节奏排布与温情的视听叙事拉近社区与人文日常的归属连接。',
-        videoUrl: '' // TODO: 填入COS URL - 开业视频,
+        videoUrl: xyVideo,
         colors: {
           primary: '#504136',
           secondary: '#C2B29F',
@@ -123,7 +123,7 @@ export const portfolioCategories: Category[] = [
         title: '场馆开业视频',
         subtitle: '营销&预热',
         description: '游乐场盛大开业，配合演员拍摄真人出镜。',
-        videoUrl: '' // TODO: 填入COS URL - 演员视频,
+        videoUrl: yanyuanVideo,
         colors: {
           primary: '#3B5249',
           secondary: '#8D7A68',
@@ -185,7 +185,7 @@ export const portfolioCategories: Category[] = [
         title: '中国第二届（南昌）洪博会H5页面设计',
         subtitle: 'H5',
         description: '南昌洪博会盛世数字化展陈页面，采用高精度滑动融媒体布局打造。附带高帧率竖版视频一站演示实况流畅翻页与页面视觉结构。',
-        videoUrl: '' // TODO: 填入COS URL - 洪博会,
+        videoUrl: hongbohuiVideo,
         colors: {
           primary: '#859E81',
           secondary: '#D6C7B7',
@@ -207,7 +207,7 @@ export const portfolioCategories: Category[] = [
           tissue1Img,
           tissue2Img
         ],
-        videoUrl: '' // TODO: 填入COS URL - 演示视频,
+        videoUrl: yanshiVideo,
         colors: {
           primary: '#3B5249',
           secondary: '#C2B29F',
@@ -235,6 +235,7 @@ export const portfolioCategories: Category[] = [
     ]
   }
 ];
+
 
 
 
