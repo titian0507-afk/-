@@ -69,7 +69,7 @@ export const portfolioCategories: Category[] = [
         title: 'AI实景合成短视频《奇遇》',
         subtitle: '宿舍中突然出现的精灵们',
         description: '独立制作。采用数字化后期合成技术，将幻想中的精灵角色无缝嫁接并沉浸式融入真实宿舍生活场景。',
-        videoUrl: 'https://player.vimeo.com/external/432924355.sd.mp4?s=d7e7ee8e3d6f1df18f2edced16a3a4b9eeab26e4&profile_id=165&oauth2_token_id=57447761',
+        videoUrl:jinglingVideo,
         colors: {
           primary: '#3B5249',
           secondary: '#A2B59F',
@@ -109,7 +109,7 @@ export const portfolioCategories: Category[] = [
         title: '社区开业视频',
         subtitle: '温情人文纪实',
         description: '专业后期与画面剪辑。聚焦社区街区开业庆典盛况，通过轻快的节奏排布与温情的视听叙事拉近社区与人文日常的归属连接。',
-        videoUrl: 'https://player.vimeo.com/external/403061730.sd.mp4?s=d0db58ebd747514a4cbd9008bc59e7a898bd048a&profile_id=165&oauth2_token_id=57447761',
+        videoUrl: xyVideo,
         colors: {
           primary: '#504136',
           secondary: '#C2B29F',
@@ -122,16 +122,16 @@ export const portfolioCategories: Category[] = [
       {
         id: 'edit-b',
         title: '场馆开业视频',
-        subtitle: '大气磅礴开幕重剪',
-        description: '场馆盛大开业宣传片。重点在画面张力、冷暖调色和强节奏音频音程的黄金卡位，重现地标性建筑与启幕仪式的质感。',
-        videoUrl: 'https://player.vimeo.com/external/409241517.sd.mp4?s=543419992bb1ff212df860ba329ecb7ca2c68f23&profile_id=165&oauth2_token_id=57447761',
+        subtitle: '营销&预热',
+        description: '游乐场盛大开业，配合演员拍摄真人出镜。',
+        videoUrl: yanyuanVideo,
         colors: {
           primary: '#3B5249',
           secondary: '#8D7A68',
           accent: '#D2DBCE'
         },
         details: [
-          { label: '服务包含', value: '节奏卡位剪辑 / 局部视效渲染 / 专业校色' }
+          { label: '服务包含', value: '节奏卡位剪辑 / 文字动画 / 专业校色' }
         ]
       }
     ]
@@ -148,7 +148,7 @@ export const portfolioCategories: Category[] = [
         id: 'graphic-a',
         title: '白参参IP设计',
         subtitle: '三张竖版海报',
-        description: '原创吉祥物人设视觉。将传统白人参设计进行拟人重塑，定制白参参IP形象。海报包含三张成套竖版平面视觉系统展现。',
+        description: '原创长白山吉祥物人设视觉。将传统白人参设计进行拟人重塑，定制白参参IP形象。海报包含三张成套竖版平面视觉系统展现。',
         images: [
           zhanban1Img,
           zhanban2Img,
@@ -166,8 +166,8 @@ export const portfolioCategories: Category[] = [
       {
         id: 'graphic-b',
         title: '基地研学折页手册设计',
-        subtitle: '两张横板超长图片',
-        description: '为生态研学基地量身定制的折页手册，全套排版输出为两张横板高精度一体超长图片，版面信息平滑流动。',
+        subtitle: '两张横板超长矢量文件',
+        description: '为研学基地量身定制的折页手册，全套排版输出为两张横板高精度一体超长矢量图稿件。',
         images: [
           zhanban1Img,
           zhanban2Img,
@@ -179,15 +179,15 @@ export const portfolioCategories: Category[] = [
           accent: '#899679'
         },
         details: [
-          { label: '图稿尺寸', value: '横式全通栏大片结构排版 (共两幅)' }
+          { label: '图稿尺寸', value: '横式全通栏大片结构排版' }
         ]
       },
       {
         id: 'graphic-c',
         title: '中国第二届（南昌）洪博会H5页面设计',
-        subtitle: '竖版视频',
+        subtitle: 'H5',
         description: '南昌洪博会盛世数字化展陈页面，采用高精度滑动融媒体布局打造。附带高帧率竖版视频一站演示实况流畅翻页与页面视觉结构。',
-        videoUrl: 'https://player.vimeo.com/external/392271813.sd.mp4?s=d7fa30dd4320b92db21e06c1bd7b3e14440c9cf9&profile_id=165&oauth2_token_id=57447761',
+        videoUrl: hongbohuiVideo,
         colors: {
           primary: '#859E81',
           secondary: '#D6C7B7',
@@ -203,13 +203,13 @@ export const portfolioCategories: Category[] = [
         subtitle: '分为H5（竖版视频）, 招生海报（3张竖版海报），诚信纸巾海报（2张竖版海报）',
         description: '全套高定校园视觉包。精简拆分为：一部动态多媒体微宣传H5（以竖版视频呈现演示）；三张高逼格精品招生视觉主海报；以及两张干净雅致的诚信包装纸巾广告海报。',
         images: [
-          'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600&h=900',
-          'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600&h=900',
-          'https://images.unsplash.com/photo-1498243691581-b145c3f54a91?auto=format&fit=crop&q=80&w=600&h=900',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600&h=900',
-          'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=600&h=900'
+          zhao1Img,
+          zhao2Img,
+          zhao3Img,
+          tissue1Img,
+          tissue2Img
         ],
-        videoUrl: 'https://player.vimeo.com/external/403061730.sd.mp4?s=d0db58ebd747514a4cbd9008bc59e7a898bd048a&profile_id=165&oauth2_token_id=57447761',
+        videoUrl: yanshiVideo,
         colors: {
           primary: '#3B5249',
           secondary: '#C2B29F',
