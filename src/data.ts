@@ -221,9 +221,9 @@ export const portfolioCategories: Category[] = [
       },
       {
         id: 'graphic-e',
-        title: 'AE合集（视频）',
-        subtitle: '动态图形集',
-        description: 'AE视觉动画合集视频。',
+        title: 'AE合集',
+        subtitle: '动态图形集混剪',
+        description: '包含专业老师录播课，个人原创微课的片头和部分动画，以及文字快闪等',
         videoUrl: 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c022273eecaf26d6d45f3f0194883584&profile_id=139&oauth2_token_id=57447761',
         colors: {
           primary: '#5D574F',
