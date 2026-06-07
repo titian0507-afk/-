@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   ArrowLeft, 
@@ -280,7 +280,7 @@ export default function App() {
       </header>
 
       {/* Active Page Portal Content */}
-      <main className="max-w-7xl mx-auto px-6 pt-8 sm:pt-14 relative z-10">
+      <main className="max-w-7xl mx-auto px-6 pt-8 sm:pt-14 relative z-10" style={{ transform: "translate3d(0px, 0px, 0px)", willChange: "transform" }}>
         
         {/* HOMEPAGE VIEW: Incorporating Immersive UI Sidebar column + interactive floating discs grid */}
         {currentPage === 'home' && (

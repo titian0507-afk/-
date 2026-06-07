@@ -24,18 +24,9 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
           className="fixed inset-0 z-50 w-full h-full overflow-hidden"
           exit={{ opacity: 1 }}
           transition={{ duration: 0.01 }}
+          // Force GPU compositing layer — prevents content repaints underneath from causing flicker
+          style={{ transform: 'translate3d(0, 0, 0)' }}
         >
-          {/* Solid full-screen cover layer — prevents background flicker between the organic blob shapes */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundColor: '#4A453F',
-              zIndex: 5,
-              willChange: 'transform',
-              backfaceVisibility: 'hidden',
-            }}
-          />
-
           {/* Diagonal Streamlined Terraced Color Blocks sweeping bottom-left to top-right */}
           {layers.map((layer, index) => (
             <motion.div

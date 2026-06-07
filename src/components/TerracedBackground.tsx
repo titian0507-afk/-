@@ -30,7 +30,7 @@ export default function TerracedBackground({ scrollY = 0, currentPage = 'home' }
   ];
 
   return (
-    <div className="fixed inset-0 w-full h-full bg-[#F2F0EB] overflow-hidden -z-20 pointer-events-none select-none">
+    <div className="fixed inset-0 w-full h-full bg-[#F2F0EB] overflow-hidden -z-20 pointer-events-none select-none" style={{ transform: "translate3d(0px, 0px, 0px)" }}>
       <style>{`
         @keyframes terraceBreath1 {
           0%, 100% { transform: translateY(0px) rotate(0deg) scaleY(1); }
