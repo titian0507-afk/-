@@ -25,7 +25,7 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
           exit={{ opacity: 1 }}
           transition={{ duration: 0.01 }}
         >
-          {/* Solid full-screen cover layer — prevents background bleed-through between the organic blob shapes */}
+          {/* Solid full-screen cover layer — prevents background flicker between the organic blob shapes */}
           <div
             className="absolute inset-0"
             style={{
@@ -36,7 +36,7 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
             }}
           />
 
-          {/* Diagonal Streamlined Terraced Color Blocks */}
+          {/* Diagonal Streamlined Terraced Color Blocks sweeping bottom-left to top-right */}
           {layers.map((layer, index) => (
             <motion.div
               key={index}
@@ -75,18 +75,18 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
                 x: '120%',
                 y: '-120%',
                 rotate: 0,
-                scale: 1.05,
-                opacity: 1,
+                scale: 0.9,
+                opacity: 0.9,
                 transition: {
-                  duration: 0.6,
-                  delay: 0,
+                  duration: 0.75,
+                  delay: (layers.length - 1 - index) * 0.05,
                   ease: [0.76, 0, 0.24, 1],
                 },
               }}
             />
           ))}
 
-          {/* Typography overlay */}
+          {/* High-end sophisticated typography layer visible during pure cover */}
           <div className="absolute inset-0 flex flex-col items-center justify-center z-[80] pointer-events-none select-none">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 15 }}
@@ -114,7 +114,7 @@ export default function WaveTransition({ isVisible, onMidway, onDone }: WaveTran
 
           {/* Midway trigger — delayed to 1.0s so all layers fully cover before DOM swap */}
           <TriggerCallback delay={1.0} onTrigger={onMidway} />
-          {/* Done trigger — fires after text animation finishes, then exit begins */}
+          {/* Done trigger */}
           <TriggerCallback delay={1.75} onTrigger={onDone} />
         </motion.div>
       )}
