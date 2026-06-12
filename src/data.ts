@@ -49,9 +49,9 @@ export const portfolioCategories: Category[] = [
     projects: [
       {
         id: 'creative-a',
-        title: '自制TVC广告片段 10s',
+        title: '自制TVC广告片段 30s',
         subtitle: '大广赛作品',
-        description: '由主创全流程独立掌镜与制作的10秒TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行拍摄。',
+        description: '由主创全流程独立掌镜与制作的30秒TVC广告片段。统筹导演、实拍、剪辑、合成及配音全项工作，使用索尼 zve10 设备进行拍摄。',
         videoUrl: haoshiVideo,
         colors: {
           primary: '#807264',
@@ -61,7 +61,7 @@ export const portfolioCategories: Category[] = [
         details: [
           { label: '职位', value: '导演 / 拍摄 / 剪辑 / 合成 / 配音' },
           { label: '拍摄设备', value: '索尼 zve10' },
-          { label: '片长时间', value: '10s 商业片段' }
+          { label: '片长时间', value: '30s 商业片段' }
         ]
       },
       {
