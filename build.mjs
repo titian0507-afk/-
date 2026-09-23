@@ -6,7 +6,7 @@ const output = resolve(root, 'dist');
 if (dirname(output) !== root || basename(output) !== 'dist') throw new Error('Unsafe output path');
 rmSync(output, { recursive: true, force: true });
 mkdirSync(output);
-for (const file of ['index.html', 'style.css', 'app.js', 'content.js', 'intro.js', 'cursor.js']) {
+for (const file of ['index.html', 'style.css', 'app.js', 'content.js', 'intro.js', 'cursor.js', 'spotlight.js']) {
   cpSync(resolve(root, file), resolve(output, file));
 }
 cpSync(resolve(root, 'assets'), resolve(output, 'assets'), { recursive: true });
